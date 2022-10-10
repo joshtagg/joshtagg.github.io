@@ -15,10 +15,6 @@ body {
 
 
 
-
-
-
-
 /*-----------------NAV BAR GENERAL-------------------------*/
 /* Add a black background color to the top navigation */
 .topnav {
@@ -111,3 +107,41 @@ body {
     display: block;
 }
 /*-----------------DROPDOWN NAV BAR----------------*/
+
+
+
+
+
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: rgb(121, 121, 121);
+    color: rgb(4,4,4);
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    margin: auto;
+    /*border: 1px solid black;*/
+    /*margin-bottom: 1px;*/
+    /*border-bottom: 1px;*/
+}
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    /*padding: 18px;*/
+    color: white;
+    display: none;
+    overflow: hidden;
+    background-color: rgb(40, 0, 87);
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible:hover {
+    background-color: #ccc;
+}

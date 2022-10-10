@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+    <meta charset="UTF-8">
     <head>
         <link rel="stylesheet" href="styles.css">
         <title>About Me</title>
@@ -12,44 +13,89 @@
     </head>
 
     
-
-
-    <body>
+    <!--style="background-image: url('/images/background2.gif'); background-size: 1000px;"-->
+    <body style="background-color: darkcyan">
         
         <div class="topnav">
             <a href="index.html">Home</a>
-            <a href="#Projects">Projects</a>
             
+            <div class ="dropdown">
+                <button class="dropbtn">Projects
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Research</a>
+                    <a href="#">Stuff</a>
+                    <a href="#">Stuff</a>
+                </div>
+            </div>
             
             <div class ="dropdown">
                 <button class="dropbtn">Personal
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="#">Astrophotography</a>
+                    <a href="astrophotography.html">Astrophotography</a>
                     <a href="#">Radio Stuff</a>
-                    <a href="#">Hardware Stuff</a>
+                    <a href="#">Hardware Projects</a>
+                    <a href="#">Bike Building</a>
                 </div>
             </div>
             <a class="active" href="about.html">About</a>
         </div>
         
 
-
-        <div style="padding-left: 1cm;">
+        <!--  class="center box"  -->
+        <div style="text-align:center; background-color: rgb(100, 100, 100); width: 50%; margin: auto">
         
-            <h1>My name is Joshua Taggart</h1>
-        
-        
-        
-        
+            <h1>About Me...</h1>
         
         
         
         </div>
         
+        <div style="text-align:center;">
+            <button type="button" class="collapsible"> > <ins>UCF</ins> < </button>
+            <div class="content">
+                <p>Lorem ipsum...</p>
+            </div>
 
+            <button type="button" class="collapsible"> > <ins>Professional Contacts</ins> < </button>
+            <div class="content">
+                <p>Lorem ipsum...</p>
+            </div>
+
+            <button type="button" class="collapsible"> > <ins>My CV</ins> < </button>
+            <div class="content">
+                <p>Lorem ipsum...</p>
+            </div>
+
+            <button type="button" class="collapsible"> > <ins>GitHub</ins> < </button>
+            <div class="content">
+                <p>Lorem ipsum...</p>
+            </div>
+
+
+        </div>
+
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+           
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } 
+                else {
+                  content.style.display = "block";
+                }
+            });
+        }
         
+        </script>
         
         
 
