@@ -23,6 +23,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    /*font-family: verdana;*/
 }
 
 /* Style the links inside the navigation bar */
@@ -56,18 +57,20 @@ body {
     overflow: hidden;
     /*display: inline-block;*/
     
+    
 }
 
 /* Dropdown button */
 .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: 17px;
     border: none;
     outline: none;
     color: white;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
+    font-family: inherit; 
     margin: 0; /* Important for vertical align on mobile phones */
+    
 }
 
 /* Add background color to navbar links on hover */
